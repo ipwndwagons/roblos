@@ -1,0 +1,7 @@
+{
+  "name": "testyfloofi",
+  "language": "javascript",
+  "manager": "npm",
+  "token": "discord token go here",
+  "prefix": "!"
+}
