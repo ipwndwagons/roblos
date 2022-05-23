@@ -17,5 +17,5 @@ then select the bot and the applications.commands scopes</br>
 </br></br>
 this bot does NOT support multiple cookies so only put one in cookies.json
 </br>to get the roblox cookie first create a roblox account and get the ROBLOSECURITY cookie with</br> https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg</br>
-
+open startbot.cmd to start the bot</br>
 https://www.npmjs.com/package/slappey
