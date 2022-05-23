@@ -1,7 +1,9 @@
 # uploaderbot
-it uploads decals.<br/>
+it uploads decals to roblox.<br/>
 it does not bypass the decal and if u need it to u gotta do it urself<br/><br/>
-
+</br>i do not suggest using your main account as anyone can access the upload command and possibly get your account terminated</br>
+</br>this tool does not automaticly update itself and newer versions can often be found here!
+</br>
 setup guide...<br/>
 step 1: download<br/>
 step 2: go to https://discord.com/developers/applications and click new application<br/>
@@ -14,6 +16,6 @@ then select the bot and the applications.commands scopes</br>
 </br>scroll all the way down and go to that link.
 </br></br>
 this bot does NOT support multiple cookies so only put one in cookies.json
-
+</br>to get the roblox cookie first create a roblox account and get the ROBLOSECURITY cookie with</br> https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg</br>
 
 https://www.npmjs.com/package/slappey
