@@ -1,5 +1,7 @@
 # uploaderbot
+currently working on getlastdecal command
 it uploads decals to roblox.<br/>
+the command is !upload `[image]`
 it does not bypass the decal and if u need it to u gotta do it urself<br/><br/>
 </br>i do not suggest using your main account as anyone can access the upload command and possibly get your account terminated</br>
 </br>this tool does not automaticly update itself and newer versions can often be found here!
