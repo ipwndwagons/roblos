@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.27.2",
     "discord.js": "^13.7.0",
     "ffmpeg": "^0.0.4",
     "noblox.js": "^4.13.1"
