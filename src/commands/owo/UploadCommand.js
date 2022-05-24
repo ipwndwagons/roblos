@@ -13,19 +13,28 @@ module.exports = class UploaddecalCommand extends BaseCommand {
     }
     //created by https://fluffydragons.cyou / fluffydragons.cyou#6030
     async run(client, message, args) {
-        const currentUser = await noblox.setCookie(cookie)
+console.log(cookie)
+const currentUser = await noblox.setCookie(cookie)
+.catch(function(error) { //
+    message.channel.send(`somthing fucked up :sob:`)
+    console.log(error)
+});
         noblox.setCookie(cookie).then(function() { //logs in 
                 console.log(`${message.author} logged in`)
+                .catch(function(error) { //
+                    message.channel.send(`somthing fucked up :sob:`)
+                    console.log(error)
+                });
+                
                 request(message.attachments.first().url).pipe(fs.createWriteStream('autoload.png')) //saves image cause dumb
-
-                    .on('finish', () => {
+                .on('finish', () => {
 
                         noblox.uploadItem(`${args} (uploader)`, 13, fs.createReadStream("autoload.png")) //reads image cause i am dumb
 
-                            .catch(function(error) { //
-                                message.channel.send(`somthing fucked up :sob:`)
-                                console.log(error)
-                            });
+                        .catch(function(error) { //
+                            message.channel.send(`somthing fucked up :sob:`)
+                            console.log(error)
+                        });
 
                         message.channel.send(`image upload returned no errors :3 \nhttps://www.roblox.com/users/${currentUser.UserID}/inventory#!/decals`);
                     })
