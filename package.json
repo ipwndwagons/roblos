@@ -1,7 +1,7 @@
 {
-  "name": "testyfloofi",
-  "version": "1.0.0",
-  "description": "",
+  "name": "uploaderbot",
+  "version": "ver 2",
+  "description": "testing",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./src/index.js",
