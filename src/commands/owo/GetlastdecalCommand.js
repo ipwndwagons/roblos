@@ -10,13 +10,15 @@ module.exports = class GetlastdecalCommand extends BaseCommand {
   }
 
   async run(client, message, args) {
+    message.react("🧐")
     //thanks to stizzy cat and someone else for the help
     console.log("yes")
     const currentUser = await noblox.setCookie(cookie)
     .catch(function(error) { //
         message.channel.send(`somthing fucked up :sob:`)
         console.log(error)});
-          await new Promise(r => setTimeout(r, 2000));
+  
+          await new Promise(r => setTimeout(r, 200));
       axios.get(`https://www.roblox.com/users/inventory/list-json?assetTypeId=13&cursor=&itemsPerPage=10&pageNumber=1&userId=${currentUser.UserID}`)
       .then(async res => {
           var data = res.data

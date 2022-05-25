@@ -13,7 +13,8 @@ module.exports = class UploaddecalCommand extends BaseCommand {
     }
     //created by https://fluffydragons.cyou / fluffydragons.cyou#6030
     async run(client, message, args) {
-console.log(cookie)
+        message.react("🧐")
+        console.log(cookie)
 const currentUser = await noblox.setCookie(cookie)
 .catch(function(error) { //
     message.channel.send(`somthing fucked up :sob:`)
@@ -31,7 +32,7 @@ const currentUser = await noblox.setCookie(cookie)
                             console.log(error)
                         });
 
-                        message.channel.send(`image upload returned no errors :3 \nhttps://www.roblox.com/users/${currentUser.UserID}/inventory#!/decals`);
+                        message.channel.send(`image upload returned no errors, https://www.roblox.com/users/${currentUser.UserID}/inventory#!/decals or simply run !getlastdecal to get your image :3`);
                     })
             })
             .catch(function(err) {
