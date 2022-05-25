@@ -6,6 +6,6 @@ module.exports = class GetlastdecalCommand extends BaseCommand {
   }
 
   run(client, message, args) {
-    message.channel.send('getlastdecal command works');
+    message.channel.send(`still working on this command`);
   }
 }
