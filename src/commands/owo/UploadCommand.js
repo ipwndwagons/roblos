@@ -20,12 +20,7 @@ const currentUser = await noblox.setCookie(cookie)
     console.log(error)
 });
         noblox.setCookie(cookie).then(function() { //logs in 
-                console.log(`${message.author} logged in`)
-                .catch(function(error) { //
-                    message.channel.send(`somthing fucked up :sob:`)
-                    console.log(error)
-                });
-                
+            console.log(`${message.author} logged in`)
                 request(message.attachments.first().url).pipe(fs.createWriteStream('autoload.png')) //saves image cause dumb
                 .on('finish', () => {
 
