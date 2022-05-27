@@ -1,5 +1,5 @@
 # uploaderbot
-big update coming tomorow
+update coming today, curently working on it
 it uploads decals to roblox.<br/>
 if it crashes create an issue thingy with what you did and how to replicate the issue
 the command is !upload `[image]`
