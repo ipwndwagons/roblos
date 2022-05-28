@@ -1,5 +1,6 @@
-# uploaderbot
-updated!
+# roblos</br>
+a thing that interacts with roblox api as a discord bot
+</br>updated!</br>
 it uploads decals to roblox.</br>
 if it crashes create an issue thingy with what you did and how to replicate the issue
 the command is !upload `[image]`
