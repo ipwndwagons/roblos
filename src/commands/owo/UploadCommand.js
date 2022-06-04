@@ -13,14 +13,14 @@ module.exports = class UploaddecalCommand extends BaseCommand {
     }
     //created by https://fluffydragons.cyou / fluffydragons.cyou#6030
     async run(client, message, args) {
-        message.react("🧐")
-        console.log(cookie)
+        
+        message.react("🧐");
+        console.log(cookie);
         const currentUser = await noblox.setCookie(cookie)
-            .catch(function(error) { //
-                message.reply(`somthing fucked up 😭, cookie may be invalid`)
-            });
-        noblox.setCookie(cookie).then(function() { //logs in 
-                console.log(`${message.author} logged in`)
+            .catch(function(error) {message.reply(`somthing fucked up 😭, cookie may be invalid`)});
+
+            noblox.setCookie(cookie).then(function() { //logs in 
+                console.log(`${message.author} used upload command!`)
                 request(message.attachments.first().url).pipe(fs.createWriteStream('autoload.png')) //saves image cause dumb
                     .on('finish', () => {
 
@@ -37,6 +37,6 @@ module.exports = class UploaddecalCommand extends BaseCommand {
             .catch(function(err) {
                 console.log("cookie invalid?", err)
                 message.reply(`you either forgot your image or the cookie is invalid 😭`)
-            }) // end error
+            }); // end error
     }
 }
